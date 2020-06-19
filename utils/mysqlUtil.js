@@ -12,7 +12,7 @@ con.connect((err) => {
   console.log("连接成功");
 });
 
-function sqlQuery(sql, arr) {
+ function sqlQuery(sql, arr) {
   return new Promise(function (resolve, reject) {
     con.query(sql, arr, (err, result) => {
       if (err) {
